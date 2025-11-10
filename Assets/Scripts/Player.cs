@@ -44,4 +44,17 @@ public class Player : MonoBehaviour
             sr.color = Color.red; 
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Obstacle"))
+        {
+            GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        Time.timeScale = 0;
+    }
 }
