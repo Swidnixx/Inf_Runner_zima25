@@ -2,21 +2,46 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float force = 10;
     public float speed = 10;
     Rigidbody2D rb;
+    SpriteRenderer sr;
+    int jumps = 0;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && jumps < 2)
         {
             //rb.AddForce(new Vector2(0, force));
-            rb.velocity = new Vector2(0, speed);
+            rb.linearVelocity = new Vector2(0, speed);
+            jumps++;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            sr.color = Color.green;
+            jumps = 0; 
+        }
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            sr.color = Color.red; 
         }
     }
 }
