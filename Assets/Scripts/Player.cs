@@ -11,6 +11,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+
     }
 
     private void Update()
@@ -49,12 +50,7 @@ public class Player : MonoBehaviour
     {
         if(collision.CompareTag("Obstacle"))
         {
-            GameOver();
+            GameManager.Instance.GameOver();
         }
-    }
-
-    void GameOver()
-    {
-        Time.timeScale = 0;
     }
 }
