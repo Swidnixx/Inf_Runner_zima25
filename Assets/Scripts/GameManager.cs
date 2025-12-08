@@ -18,7 +18,9 @@ public class GameManager : MonoBehaviour
 
     public GameObject gameOverPanel;
     public TMP_Text scoreText;
+    public TMP_Text coinsText;
     float score = 0;
+    int coins = 0;
 
     private void Update()
     {
@@ -36,5 +38,11 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void AddCoin()
+    {
+        coins++;
+        coinsText.text = coins.ToString();
     }
 }
