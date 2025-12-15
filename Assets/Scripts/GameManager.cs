@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
+    public MagnetSO magnet;
+
     public GameObject gameOverPanel;
     public TMP_Text scoreText;
     public TMP_Text coinsText;
@@ -44,5 +46,16 @@ public class GameManager : MonoBehaviour
     {
         coins++;
         coinsText.text = coins.ToString();
+    }
+
+    public void ActivateMagnet()
+    {
+        magnet.Active = true;
+        Invoke(nameof(CancelMagnet), magnet.Duration);
+    }
+
+    void CancelMagnet()
+    {
+        magnet.Active = false;
     }
 }
