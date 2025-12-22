@@ -24,6 +24,14 @@ public class GameManager : MonoBehaviour
     float score = 0;
     int coins = 0;
 
+    private void Start()
+    {
+        coins = PlayerPrefs.GetInt("Coins");
+        coinsText.text = coins.ToString();
+
+        magnet.Active = false;
+    }
+
     private void Update()
     {
         score += Time.deltaTime;
@@ -46,6 +54,7 @@ public class GameManager : MonoBehaviour
     {
         coins++;
         coinsText.text = coins.ToString();
+        PlayerPrefs.SetInt("Coins", coins);
     }
 
     public void ActivateMagnet()
