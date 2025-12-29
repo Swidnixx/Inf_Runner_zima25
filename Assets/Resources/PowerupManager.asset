@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 661d51089f80fb648ba7bc8dafb9f26a, type: 3}
-  m_Name: Magnet_3
-  m_EditorClassIdentifier: Assembly-CSharp::MagnetSO
-  Active: 0
-  Duration: 5.5
-  Range: 2.5
-  Level: 3
-  Price: 2400
-  Upgrade: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: cbc30ed4e9ae78347bf2bbf3f315c34a, type: 3}
+  m_Name: PowerupManager
+  m_EditorClassIdentifier: Assembly-CSharp::PowerupManager
+  _magnet: {fileID: 11400000, guid: dc1f8f87b5d9ee140964135f8c66567c, type: 2}
+  reset: 0

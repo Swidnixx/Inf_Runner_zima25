@@ -15,3 +15,6 @@ MonoBehaviour:
   Active: 0
   Duration: 10.5
   Range: 3.5
+  Level: 2
+  Price: 2
+  Upgrade: {fileID: 11400000, guid: dc1f8f87b5d9ee140964135f8c66567c, type: 2}

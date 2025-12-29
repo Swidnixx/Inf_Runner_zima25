@@ -16,7 +16,8 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    public MagnetSO magnet;
+    public PowerupManager powerupManager;
+    public MagnetSO magnet => powerupManager.Magnet;
 
     public GameObject gameOverPanel;
     public TMP_Text scoreText;
