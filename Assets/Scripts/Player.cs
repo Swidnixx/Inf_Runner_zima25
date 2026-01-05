@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
             //rb.AddForce(new Vector2(0, force));
             rb.linearVelocity = new Vector2(0, speed);
             jumps++;
+            SoundManager.Instance.PlayJump();
         }
     }
 

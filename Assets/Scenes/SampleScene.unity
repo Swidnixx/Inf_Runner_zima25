@@ -816,6 +816,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 8556235910502272175, guid: cfb48afcff62e9a4c99cd4d29cd4e23a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1008,6 +1012,10 @@ PrefabInstance:
     - target: {fileID: 8556235910502272175, guid: cfb48afcff62e9a4c99cd4d29cd4e23a, type: 3}
       propertyPath: m_Name
       value: Coin (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556235910502272175, guid: cfb48afcff62e9a4c99cd4d29cd4e23a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1265,6 +1273,10 @@ PrefabInstance:
     - target: {fileID: 8556235910502272175, guid: cfb48afcff62e9a4c99cd4d29cd4e23a, type: 3}
       propertyPath: m_Name
       value: Coin (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8556235910502272175, guid: cfb48afcff62e9a4c99cd4d29cd4e23a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1524,6 +1536,10 @@ MonoBehaviour:
   right: {fileID: 1164702752}
   worldSegments:
   - {fileID: 4126880804800995948, guid: f0731ead643478641a53c9a45024011a, type: 3}
+  - {fileID: 4334114176633823104, guid: 6df03d2e2d0c8db4894da1025dba6f75, type: 3}
+  - {fileID: 4126880804800995948, guid: d1e9ccb33dea0ab4797ecb841c579007, type: 3}
+  - {fileID: 8386788136779441578, guid: f3f6caa8ad7430b408c47a93cf224d03, type: 3}
+  - {fileID: 8386788136779441578, guid: c67919f5080a4854894d9dbc29255138, type: 3}
 --- !u!1 &1584106952
 GameObject:
   m_ObjectHideFlags: 0

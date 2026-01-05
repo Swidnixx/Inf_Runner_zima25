@@ -18,6 +18,7 @@ public class Shop : MonoBehaviour
 
     public void UpgradeMagnet()
     {
+        SoundManager.Instance.PlayClick();
         if (powerupManager.Magnet.CanUpgrade)
         {
             if (money > powerupManager.Magnet.Price)

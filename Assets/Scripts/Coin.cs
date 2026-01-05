@@ -33,6 +33,7 @@ public class Coin : MonoBehaviour
         {
             Destroy(gameObject);
             GameManager.Instance.AddCoin();
+            SoundManager.Instance.PlayCoin();
         }
     }
 }
